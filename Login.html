@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        function tampilkanData() {
+        // Ambil nilai dari input field
+        var nisn = document.getElementsByName("Email")[0].value;
+        var password = document.getElementsByName ("password")[0].value;
+
+        // Tampilkan nilai dibawah form
+        var hasil = "<br>Email: " + Email + "<br>password: " + Password;
+        document.getElementById("hasil").innerHTML = hasil;
+    }
+    </script>
+</head>
+<body>
+    <font face="arial" size="6">Data Diri</font>
+    <br><br>
+    <font face="arial" size="5">
+        <br>Email: <input type="text" name="Email" size="9">
+        <br>Password: <input type="password" name="password" size="11" maxlength="9"> 
+    </font>
+    <br><input type="button" name="submit" value="Masukkan Form" onclick="tampilkanData()">
+    <br><div id="hasil"></div>
+</body>
+</html>
